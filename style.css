@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+p {
+    font-size: 50px;
+    text-align: center;
+}
+
+.perg {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+button {
+    font-size: 50px;
+    padding: 20px 30px;
+    margin: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+}
+
+button.sim:hover {
+    background-color: rgb(31, 247, 12);
+    color: white;
+}
+
+button.nao:hover {
+    background-color: red;
+    color: white;
+}
+
+button.cor:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+body {
+    margin: 50px;
+}
+
+section {
+    display: grid;
+    align-items: center;
+    place-items: center;
+    min-width: 100vh;
+}
+
+.limpo {
+    display: none;
+}
+
+.pai1 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-areas:
+        'top top top'
+        'midE midC midD';
+}
+
+.top {
+    grid-area: top;
+    justify-self: center;
+}
+
+.midE {
+    grid-area: midE;
+    max-width: 300px;
+}
+
+.midC {
+    grid-area: midC;
+    margin: 30px;
+    align-self: center;
+    font-size: 70px;
+}
+
+.midD {
+    grid-area: midD;
+    max-width: 300px;
+}
+
+.midia {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-areas:
+        'top top top'
+        'midE midC midD'
+        'botE botC botD';
+}
+
+.top {
+    grid-area: top;
+    justify-self: center;
+}
+
+.midE {
+    grid-area: midE;
+    max-width: 300px;
+}
+
+.midC {
+    grid-area: midC;
+    margin: 30px;
+    align-self: center;
+    font-size: 70px;
+}
+
+.midD {
+    grid-area: midD;
+    max-width: 300px;
+}
+
+.botE {
+    grid-area: botE;
+    max-width: 300px;
+}
+
+.botC {
+    grid-area: botC;
+    margin: 30px;
+    justify-self: center;
+    font-size: 70px;
+}
+
+.botD {
+    grid-area: botD;
+    max-width: 300px;
+}
+
+.pai2 {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-areas:
+        'top top'
+        'midE midD'
+        'botE botD';
+}
+
+.pessoas {
+    max-width: 290px;
+    border-radius: 10px;
+    grid-area: pessoas;
+}
+
+.card {
+    display: grid;
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: white;
+    justify-items: center;
+    grid-template-areas:
+        'pessoas'
+        'h3';
+}
+
+.h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    grid-area: h3;
+    align-self: top;
+}
+
+.cards {
+    display: grid;
+    gap: 30px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translatex(-100%);
+    filter: blur(15px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translatex(0);
+    transition: all 2s;
+}
+
+.cards :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.cards :nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.cards :nth-child(4) {
+    transition-delay: 800ms;
+}
+
+.cards :nth-child(5) {
+    transition-delay: 1000ms;
+}
